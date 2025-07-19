@@ -228,3 +228,63 @@ header{
    text-align: center;
    line-height: 25px;
 }
+
+.box-container {
+  max-width: 900px; /* 3 columns × ~300px each */
+  margin: 0 auto;   /* center horizontally */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  
+}
+
+.Top-Games .box-container {
+  max-width: 960px;  /* enough for 3 columns of ~300px + gaps */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 2rem;
+  justify-items: center; /* center items inside each grid cell */
+}
+
+.Top-Games .box {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.Top-Games .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Top-Games .box video {
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.Top-Games .box-container .box{
+   height: 27rem;
+   border-radius: .5rem;
+   overflow: hidden;
+   position: relative;
+}
+
+.Top-Games .box-container .box img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   transition: .2s var(--light-white);
+}
+
+.Top-Games .box-container .box:hover img{
+   transform: scale(1.1);
+
+}
+
+.Top-Games .box-container .box::before{
+   content: 'PLAY NOW';
+}
