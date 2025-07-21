@@ -86,9 +86,6 @@ header{
 }
 
 
-
-
-
 .about-us p{
    font-size: 12px;
 }
@@ -181,7 +178,7 @@ header{
    top: 20%;
    right: 20px;
    height: 400px;
-  clip-path: polygon(68% 0, 100% 0%, 94% 100%, 39% 100%);
+  clip-path: polygon(59% 0, 100% 0%, 90% 100%, 28% 100%);
 }
 
 .about-us .img2{
@@ -200,5 +197,15 @@ header{
    height: 320px;
    width: auto;
    clip-path: polygon(18% 0, 57% 0, 68% 49%, 78% 100%, 25% 100%, 0% 50%);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    background-color: #000000; 
+    color: #fff;
+    font-size: 0.9em;
 }
 

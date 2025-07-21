@@ -3,21 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Games - Arcadian Gaming</title>
-    <link rel="stylesheet" href="faq.css">
+    <title>Arcadian - FAQ</title>
+    <link rel="stylesheet" href="about.css"> 
+    <link rel="stylesheet" href="faq.css"> 
 </head>
 <body>
     <div class="container">
         <header>
             <div class="head-left">
-                <img src="images/logo.png" alt ="logo">
-                <button><a href="signin.html">Sign-in</a>
-                    </button>
+                <img src="images/logo.png" alt="Arcadian Logo">
+                <a href="signin.html" class="logo-button">Sign-in</a> 
             </div>
-            <div class="head-right">
+
+            <nav class="head-right"> 
                 <p><a href="index.html">HOME</a></p>
-                <p><a href="about.html">ABOUT</a></p>
                 <p><a href="games.html">GAMES</a></p>
-                <p><a href="contact.html">CONTACT</a></p>
+                <p><a href="about.html">ABOUT</a></p> 
+                <p><a href="#">CONTACT</a></p>
+            </nav>
+        </header>
+
+        <section class="faq-hero">
+            <div class="faq-hero-content">
+                <h1>Frequently Asked Questions</h1>
+                <div class="search-bar">
+                    <input type="text" id="faq-search" placeholder="How can we help you find an answer?">
+                    <button id="faq-search-button">Search</button>
+                </div>
             </div>
-             </header>
+        </section>
+
+        <main class="faq-main-content">
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>What is Arcadian?</h2>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Arcadian is a university project designed to showcase a curated collection of games hosted from various external websites. It serves as a platform to explore different gaming experiences and demonstrate web development skills.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>Who created Arcadian?</h2>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Arcadian was created by a student as part of a university project, driven by a passion for video games and web design.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>Are the games on Arcadian developed by you?</h2>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, the games featured on Arcadian are hosted from other websites. We are not the developers of these games. We simply provide links or embed them for your convenience and enjoyment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>How do I play the games?</h2>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each game on Arcadian is linked to its original hosting site. Simply click on the game you're interested in, and you'll be directed to the external site where you can play it directly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>Is Arcadian free to use?</h2>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Arcadian is a free project. Any costs associated with playing games on the external sites (e.g., in-game purchases or premium access) are determined by those respective platforms, not by Arcadian.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Arcadian.</p>
+        </footer>
+    </div>
+
+   
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+
+    
+    <script src="faq.js"></script>
+</body>
+</html>
