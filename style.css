@@ -323,8 +323,8 @@ header{
 }
 
 .box-container {
-  max-width: 900px; /* 3 columns × ~300px each */
-  margin: 0 auto;   /* center horizontally */
+  max-width: 900px; 
+  margin: 0 auto;  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -332,12 +332,12 @@ header{
 }
 
 .Top-Games .box-container {
-  max-width: 960px;  /* enough for 3 columns of ~300px + gaps */
+  max-width: 960px; 
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 2rem;
-  justify-items: center; /* center items inside each grid cell */
+  justify-items: center; 
 }
 
 .Top-Games .box {
@@ -400,6 +400,8 @@ header{
    transform: scale(1);
 }
 
+
+
 .more-games{
    position: relative;
    width: 100%;
@@ -415,7 +417,7 @@ header{
    top: 20%;
    right: 20px;
    height: 400px;
-   clip-path: polygon(36% 0, 100% 0%, 90% 100%, 13% 100%);
+  clip-path: polygon(49% 0, 96% 0, 86% 100%, 20% 100%);
 }
 
 .more-games .img2{
