@@ -1,0 +1,177 @@
+/* Import or reuse base styles if needed */
+/* @import url('about.css'); */
+
+/* General Body/Container for Thank You Page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background, matching your site */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+.container { /* Ensure this takes full height */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Pushes header and footer to edges */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header Reuse - Make sure it's consistent */
+header {
+    position: relative; /* Changed from absolute to relative for better flow */
+    width: 100%;
+    top: auto; /* Reset absolute positioning */
+    left: auto;
+    right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    z-index: 999;
+    background: rgba(194, 181, 194, 0.45); /* Semi-transparent dark grey */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.head-left img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    margin-right: 15px;
+}
+
+.head-left a{
+   align-items: center;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #eee7e7;
+   font-size: 16px;
+   
+}
+
+
+.logo-button {
+    text-decoration: none;
+    color: #ffffff; /* White logo text */
+    font-size: 24px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.logo-button:hover {
+    color: #8a64a9; /* Example hover color */
+}
+
+.head-right a {
+    text-decoration: none;
+    color: #ffffff; /* White nav links */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.head-right a:hover {
+    color: #007bff;
+}
+
+/* Thank You Section */
+.thank-you-section {
+    flex-grow: 1; /* Allow this section to take up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px; /* Add some padding */
+}
+
+.thank-you-content {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 40px 50px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.success-icon {
+    font-size: 4em; /* Large size for the checkmark */
+    color: #28a745; /* Green color */
+    margin-bottom: 20px;
+    display: block; /* Ensure it's a block for margin */
+}
+
+.thank-you-content h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: #ffffff; /* White heading */
+}
+
+.thank-you-content p {
+    font-size: 1.1em;
+    color: #dddddd; /* Slightly off-white for body text */
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.cta-button { /* Primary button (e.g., "Send Another Message") */
+    display: inline-block;
+    background-color: #ffffff; /* White button */
+    color: #007bff; /* Blue text */
+    border: 2px solid #007bff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 10px; /* Space between buttons */
+}
+
+.cta-button:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+.secondary-button { /* Secondary button (e.g., "Go to Homepage") */
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff; /* White text */
+    border: 2px solid #ffffff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 10px;
+}
+
+.secondary-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight white background on hover */
+    color: #ffffff;
+}
+
+/* Footer Reuse - Make sure it's consistent */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #000000; /* Dark footer */
+    color: #fff;
+    font-size: 0.9em;
+}
