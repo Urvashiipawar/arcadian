@@ -216,7 +216,7 @@ header{
 
 .left button:hover{
    opacity: 0.7;
-   color: #0099ff;
+   color: #9e54b5;
 }
 
 .hidden {
@@ -225,9 +225,9 @@ header{
 
 
 .filter-btn.active {
-    background-color: #0099ff; 
+    background-color: #b162b7; 
     color: black;
-    border-color: #0099ff;
+    border-color: #7c2983;
     opacity: 1; 
 }
 
@@ -240,4 +240,233 @@ footer {
     color: #fff;
     font-size: 0.9em;
 }
+
+
+
+@media (max-width: 575.98px) {
+    
+    header {
+        padding: 10px 20px; 
+    }
+    .head-left img {
+        width: 35px;
+        height: 35px;
+    }
+    .logo-button { 
+        font-size: 20px;
+    }
+    .head-right {
+        flex-direction: column; 
+        align-items: flex-start; 
+        position: absolute; 
+        top: 70px; 
+        left: 20px;
+        background-color: rgba(75, 75, 75, 0.9); 
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 15px;
+        border-radius: 8px;
+        display: none; 
+    }
+    .head-right.active { 
+        display: flex;
+    }
+    .head-right p {
+        margin: 5px 0; 
+    }
+    .head-right a {
+        font-size: 14px;
+    }
+    
+
+    
+    .Top-Games h1 {
+        font-size: 60px; 
+        padding: 0 15px; 
+    }
+    .Top-Games .box-container {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 1.5rem;
+        padding: 0 15px;
+    }
+    .Top-Games .box {
+        height: 250px; 
+    }
+    .Top-Games .box::before {
+        font-size: 1.5rem;
+    }
+
+    
+    .container-side {
+        padding-top: 80px; 
+    }
+    .left {
+        justify-content: center; 
+        padding: 0 15px;
+    }
+    .left h1 {
+        font-size: 30px; 
+        text-align: center;
+        margin-right: 0;
+    }
+    .left button {
+        padding: 10px 25px; 
+    }
+    .filter-btn {
+        margin-bottom: 10px; 
+    }
+    .filter-btn.active {
+        width: 80%; 
+        margin: 0 auto 10px auto;
+        text-align: center;
+    }
+
+    
+    .login-box, .register-box-section {
+        width: 90%; 
+        padding: 20px 25px;
+    }
+    .main-info h1 {
+        font-size: 50px; 
+    }
+    .main-section {
+        padding-left: 0; 
+        justify-content: center; 
+    }
+
+    
+    .faq-hero, .contact-hero {
+        height: 250px;
+    }
+    .faq-hero h1, .contact-hero h1 {
+        font-size: 2.5em;
+    }
+    .faq-hero p, .contact-hero p {
+        font-size: 1em;
+    }
+    .search-bar {
+        width: 90%;
+        flex-direction: column;
+        padding: 10px;
+    }
+    #faq-search {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #faq-search-button {
+        width: 100%;
+    }
+    .faq-main-content, .contact-main-content {
+        width: 90%;
+        padding: 25px;
+    }
+    .faq-question h2, .contact-details h2, .contact-form h2 {
+        font-size: 1.2em;
+    }
+    .faq-icon {
+        font-size: 1.5em;
+    }
+    .contact-details, .contact-form {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    .contact-item {
+        flex-wrap: wrap; 
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .contact-text {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    
+
+    
+    .Top-Games .box-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.5rem;
+        padding: 0 20px;
+    }
+    .Top-Games .box {
+        height: 280px; 
+    }
+
+    
+    .left {
+        justify-content: center;
+    }
+    .left h1 {
+        font-size: 45px;
+    }
+
+    
+    .main-info h1 {
+        font-size: 60px;
+    }
+    .login-box, .register-box-section {
+        width: 80%;
+    }
+
+    
+    .faq-hero h1, .contact-hero h1 {
+        font-size: 3em;
+    }
+    .search-bar {
+        width: 70%;
+    }
+    .faq-main-content, .contact-main-content {
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+
+    
+    .Top-Games .box-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+    }
+    .Top-Games .box {
+        height: 300px;
+    }
+
+    
+    .left {
+        justify-content: center;
+    }
+    .left h1 {
+        font-size: 60px;
+    }
+
+    
+    .main-info h1 {
+        font-size: 70px;
+    }
+    .login-box, .register-box-section {
+        width: 70%;
+    }
+
+    
+    .faq-hero h1, .contact-hero h1 {
+        font-size: 3.2em;
+    }
+    .search-bar {
+        width: 65%;
+    }
+    .faq-main-content, .contact-main-content {
+        width: 75%;
+    }
+}
+
 
