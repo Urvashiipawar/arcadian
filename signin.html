@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head-left">
+                <img src="images/logo.png" alt ="logo">
+                <button><a href="signin.html">Sign-in</a>
+                    </button>
+            </div>
+
+            <div class="head-right">
+                <p><a href="index.html">HOME</a></p>
+                <p><a href="games.html">GAMES</a></p>
+                <p><a href="about.html">ABOUT</a></p>
+                <p><a href="faq.html">FAQ</a></p>
+                
+            </div>
+                
+                
+        </header>
+
+        <section class="main-section autoBlur">
+            <div class="main-vid">
+                <video loop autoplay muted plays-inline class="main-video">
+                    <source src="videos/0721.mp4" type ="video/mp4">
+                </video>
+
+                <div class="main-info">
+                    <h1>Welcome</h1>
+                    
+                    
+                </div>
+
+                <div class="login-box">
+                    <form action="">
+                        <h2>Login</h2>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Password</label>
+
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot Password?</a>
+
+                        </div>
+                        <button type="submit">Login</button>
+
+                        <div class="register-link">
+                            <p>Don't have an account? <a href="#">Register</a></p>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="register-box-section" id="register-section"> 
+                    <form action="">
+                        <h2>Register</h2>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span> 
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+
+                        <button type="submit">Register</button>
+
+                        <div class="login-link"> 
+                            <p>Already have an account? <a href="#login-section">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+                <script>
+                    const loginBox = document.querySelector('.login-box');
+                    const registerBox = document.querySelector('.register-box-section');
+                    const registerLink = document.querySelector('.register-link a'); 
+                    const loginLink = document.querySelector('.login-link a');     
+
+                    
+                    function showLogin() {
+                        loginBox.style.display = 'flex'; 
+                        registerBox.style.display = 'none';
+                        
+                    }
+
+                    
+                    function showRegister() {
+                        loginBox.style.display = 'none';
+                        registerBox.style.display = 'flex'; 
+                        
+                    }
+
+                    
+                    registerLink.addEventListener('click', (e) => {
+                        e.preventDefault(); 
+                        showRegister();
+                    });
+
+                    loginLink.addEventListener('click', (e) => {
+                        e.preventDefault(); 
+                        showLogin();
+                    });
+
+                    
+                </script>
+
+            </div> 
+        </section> 
+    </div> 
+
+    
+
+
+        </div>
+    </section>
+</body>
+</html>
+
+
+                
+                
+
+
+            </div>
+        </section>
